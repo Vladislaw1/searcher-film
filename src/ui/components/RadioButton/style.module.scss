@@ -1,0 +1,94 @@
+@import "../../../shared/styles/variables.module";
+
+.radio{
+  display: none;
+}
+.checkmark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  width: 20px;
+  position: relative;
+  border-radius: 50%;
+  border: 2px solid $primary-color;
+  transition: background-color 0.2s;
+
+  &:before{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 4px;
+    height: 7px;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    opacity: 0;
+    transition: 0.2s;
+    transform: rotate(45deg);
+    border-radius: 1px;
+  }
+}
+
+.radio:checked ~ .checkmark{
+  background-color: $primary-color;
+}
+
+.radio:checked + .checkmark:before{
+  opacity: 1;
+}
+
+//.radio_container {
+//  display: inline-block;
+//  position: relative;
+//  padding-left: 25px;
+//  margin-bottom: 15px;
+//  cursor: pointer;
+//  font-size: 16px;
+//}
+//
+//.radio_container input {
+//  position: absolute;
+//  opacity: 0;
+//  cursor: pointer;
+//}
+//
+//.checkmark {
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  height: 20px;
+//  width: 20px;
+//  background-color: #eee;
+//  border-radius: 50%;
+//}
+//
+//.radio_container:hover input ~ .checkmark {
+//  background-color: #ccc;
+//}
+//
+//.radio_container input:checked ~ .checkmark {
+//  background-color: $primary-color;
+//}
+//
+//.checkmark:before {
+//  content: "";
+//  position: absolute;
+//  display: none;
+//}
+//
+//.radio_container input:checked ~ .checkmark:before {
+//  display: block;
+//}
+//
+//.radio_container .checkmark:before {
+//  content: " ";
+//  top: 7px;
+//  left: 7px;
+//  width: 6px;
+//  height: 6px;
+//  border-radius: 50%;
+//  background: $primary-color;
+//  border-bottom: 1px white;
+//  border-right: 1px white;
+//}
+

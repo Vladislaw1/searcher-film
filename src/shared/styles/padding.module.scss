@@ -1,0 +1,32 @@
+@import "variables.module";
+
+.small {
+  padding: $extra;
+}
+
+.medium {
+  padding: $medium;
+}
+
+.large {
+  padding: $large;
+}
+
+.extra {
+  padding: $extra;
+}
+
+
+.bottomL {
+  padding-bottom: $large;
+}
+
+.horizontalE {
+  padding-left: $extra;
+  padding-right: $extra;
+}
+
+.verticalL {
+  padding-top: $large;
+  padding-bottom: $large;
+}

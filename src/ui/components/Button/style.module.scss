@@ -1,0 +1,29 @@
+@import "../../../shared/styles/variables.module";
+
+.btn{
+  color: white;
+  border: none;
+  border-radius: $medium;
+  text-align: center;
+  width: 100%;
+  padding: $large;
+
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.primary{
+  background: $primary-color;
+}
+
+.secondary{
+  background: $secondary-color;
+}
+
+.disabled{
+  opacity: 50%;
+  &:hover{
+    cursor: no-drop;
+  }
+}

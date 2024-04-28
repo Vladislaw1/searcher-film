@@ -1,0 +1,36 @@
+@import "variables.module";
+
+.small{
+  margin: $extra;
+}
+.medium{
+  margin: $medium;
+}
+.large{
+  margin: $large;
+}
+.extra{
+  margin: $extra;
+}
+
+.verticalL{
+  margin-top: $large;
+  margin-bottom: $large;
+}
+
+.topL{
+  margin-top: $large
+}
+
+.leftS{
+  margin-left: $small;
+}
+.leftM{
+  margin-left: $medium;
+}
+.leftL{
+  margin-left: $large;
+}
+.leftE{
+  margin-left: $extra;
+}

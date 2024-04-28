@@ -1,0 +1,16 @@
+.progressBar{
+  grid-column: 1/3;
+  margin-top: 8px;
+}
+
+.bar{
+  background: white;
+  height: 4px;
+}
+.bar_fill{
+  width: 0;
+  height: inherit;
+  background: linear-gradient(#4AD6BB 100%,#38A58F
+  100%);
+  transition: width 0.5s ease-in-out;
+}

@@ -1,0 +1,9 @@
+@import "variables.module";
+
+.main_border{
+  box-shadow:  0 0 0 1px $secondary-color;
+}
+
+.border_radius_medium{
+  border-radius: $medium;
+}

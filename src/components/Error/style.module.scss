@@ -1,0 +1,5 @@
+@import "../../shared/styles/variables.module";
+
+.icon {
+  background: repeating-linear-gradient(45deg, $primary-color, transparent 103px);
+}
